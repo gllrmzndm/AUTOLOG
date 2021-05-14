@@ -8,6 +8,7 @@ const autologList = document.querySelector(".autolog-list")
 autologButton.addEventListener('click', autolog);
 autologButton.addEventListener('enter', autolog);
 
+
 //Function autolog
 function autolog(event) {
   event.preventDefault();
@@ -42,4 +43,18 @@ function autolog(event) {
   function resetAutologInput() {
   document.getElementById("autolog-input").value = ("");
   };
+}
+
+autologList.addEventListener('click', deleteCheck);
+
+function deleteCheck(e){
+  e.preventDefault();
+  console.log(e.target + "eerste log");
+  const autologItem = e.target;
+  console.log(autologItem);
+  if(autologItem.classList[0] === "trash-btn") {
+  console.log('what');
+  const delAutlogitem = autologItem.parentElement;
+  delAutlogitem.remove();
+  }
 }
