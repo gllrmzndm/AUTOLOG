@@ -100,3 +100,10 @@ form {
   background-color:#f5f5f5;
   justify-content: space-between;
 }
+
+.fa-minus:before, .trash-btn, .fa-check:before, .complete-btn{
+  background-color:#FD3C22;
+  color: #f5f5f5;
+  border: none;
+  padding: 1rem;
+}

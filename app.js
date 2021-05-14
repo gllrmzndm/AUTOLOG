@@ -23,14 +23,14 @@ function autolog(event) {
 
   //Check Markbutton
   const completedButton = document.createElement('button');
-  completedButton.innerHTML = '<i class="fas fa-check-circle"></i>';
+  completedButton.innerHTML = '<i class="fas fa-check"></i>';
   completedButton.classList.add("complete-btn");
   autologDiv.appendChild(completedButton);
 
   //Check trashbutton
   const trashButton = document.createElement('button');
-  trashButton.innerHTML = '<i class="fas fa-minus-circle"></i>';
-  trashButton.classList.add("complete-btn");
+  trashButton.innerHTML = '<i class="fas fa-minus"></i>';
+  trashButton.classList.add("trash-btn");
   autologDiv.appendChild(trashButton);
 
   //Append to list
