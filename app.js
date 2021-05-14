@@ -4,10 +4,11 @@ const autologInput = document.querySelector(".autolog-input")
 const autologButton = document.querySelector(".autolog-button")
 const autologList = document.querySelector(".autolog-list")
 
-//Event Listeners
+//Event Listeners this listen to an event like click and fires the function autlog event.
 autologButton.addEventListener('click', autolog);
+autologButton.addEventListener('enter', autolog);
 
-//Functions
+//Function autolog
 function autolog(event) {
   event.preventDefault();
   //AutologDIV
@@ -15,8 +16,8 @@ function autolog(event) {
   autologDiv.classList.add("autolog")
 
   //Create list
-  const newAutolog = document.createElement("li")
-  newAutolog.innerText = 'hey';
+  const newAutolog = document.createElement("ul")
+  newAutolog.innerText = autologInput.value;
   newAutolog.classList.add('autolog-item');
   autologDiv.appendChild(newAutolog)
 
@@ -34,4 +35,11 @@ function autolog(event) {
 
   //Append to list
   autologList.appendChild(autologDiv);
-};
+
+  //Reset autolog inputfield
+  resetAutologInput();
+
+  function resetAutologInput() {
+  document.getElementById("autolog-input").value = ("");
+  };
+}
