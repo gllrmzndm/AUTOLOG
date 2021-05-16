@@ -75,9 +75,9 @@ form {
 }
 
 .autolog-button {
-  background-color: #FD3C22;
+  background-color: #bcff03;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -104,7 +104,7 @@ form {
 }
 
 .fa-minus:before, .trash-btn, .fa-check:before, .complete-btn {
-  background-color:#FD3C22;
+  background-color:#7e16e5;
   color: #f5f5f5;
   border: none;
   padding: 1rem;
@@ -112,4 +112,9 @@ form {
 
 .autolog-item {
   padding: 1rem;
+}
+
+.autolog-button:hover {
+  background-color: #7e16e5;
+  color: white;
 }
