@@ -1,4 +1,4 @@
-//Selectors
+  //Selectors
 
 const autologInput = document.querySelector(".autolog-input")
 const autologButton = document.querySelector(".autolog-button")
@@ -49,10 +49,20 @@ autologList.addEventListener('click', deleteCheck);
 
 function deleteCheck(e){
   e.preventDefault();
-  console.log(e.target + "eerste log");
+  console.log(e.target + "");
   const autologItem = e.target;
   console.log(autologItem);
-  if(autologItem.classList[0] === "trash-btn") {
+  console.log(autologItem.classList[0])
+
+  if (autologItem.classList[0] === "fas") {
+    console.log('whatsfsdfsa');
+    const delAutlogitem = autologItem.parentElement.parentElement;
+    console.log(delAutlogitem);
+    delAutlogitem.remove();
+    }
+
+  // Delete item is trash-btn is clicked.
+  else if (autologItem.classList[0] === "trash-btn") {
   console.log('what');
   const delAutlogitem = autologItem.parentElement;
   delAutlogitem.remove();
