@@ -134,10 +134,9 @@ form {
     color: #fffafa;
     background-color: #3d3c3c;
   }
+
 }
 
 .completed {
     text-decoration: line-through;
-    background-color: #bcff03;
-    opacity: 0.5;
   }
