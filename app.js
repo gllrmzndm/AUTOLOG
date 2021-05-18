@@ -52,19 +52,19 @@ function deleteCheck(e){
   console.log(e.target + "");
   const autologItem = e.target;
   console.log(autologItem);
-  console.log(autologItem.classList[0])
+  console.log(autologItem.classList[1])
 
-  if (autologItem.classList[0] === "fas") {
+  if (autologItem.classList[1] === "fa-check") {
     console.log('whatsfsdfsa');
-    const delAutlogitem = autologItem.parentElement.parentElement;
-    console.log(delAutlogitem);
-    delAutlogitem.remove();
-    }
+    const completeAutologItem = autologItem.parentElement.parentElement.firstChild;
+    console.log(completeAutologItem);
+    completeAutologItem.classList.toggle("completed");
+  }
 
   // Delete item is trash-btn is clicked.
-  else if (autologItem.classList[0] === "trash-btn") {
+  if (autologItem.classList[1] === "fa-minus") {
   console.log('what');
-  const delAutlogitem = autologItem.parentElement;
-  delAutlogitem.remove();
+  const delAutologitem = autologItem.parentElement.parentElement;
+  delAutologitem.remove();
   }
 }
