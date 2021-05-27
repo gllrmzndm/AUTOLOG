@@ -12,8 +12,7 @@ This app/website is under construction... doesn't work with Safari.
 - Learning some good practices.
 - And more (AirB, HTML, CSS and whatever) this a note voor mij en niet voor jou.
 - Unit testing selium for Javascript?
-
-Ik ben mijn git dingen kwijt over. (waar ging het over?)
+- More in git.
 
 1. Promises(async /await) 
 2. Callback functions 
