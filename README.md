@@ -13,6 +13,22 @@ This app/website is under construction... doesn't work with Safari.
 - And more (AirB, HTML, CSS and whatever) this a note voor mij en niet voor jou.
 - Unit testing selium for Javascript?
 
+Ik ben mijn git dingen kwijt over. (waar ging het over?)
+
+1. Promises(async /await) 
+2. Callback functions 
+3. Clean destruction 
+4. Testing 
+5. Scope && closure 
+6. this keyword 
+7. Debugging 
+8. Time complicity 
+9. Optimization 
+10. Composition
+11. Understanding the default behavior of the language itself 
+12. Keep your code modular
+
+
 - Wacht even dus met Javascript kan ik niet direct CSS aanpassen, maar alleen via DOM. -___-
 - Toen ik aan het debuggen was, kwam ik een andere class tegen voor de delete-btn en complete-btn.
 - Meeste slechste implementatie van de delete-btn en complete-btn.
