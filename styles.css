@@ -124,7 +124,7 @@ form {
 
 @media (prefers-color-scheme: dark) {
   body  {
-    background-color: #131313 ;
+    background-color: #444 ;
   }
   .autolog-input {
     background: linear-gradient(143deg, #00caff 3%, #a200ff 49%, #ff00a8 100%);
